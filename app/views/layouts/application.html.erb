@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Railsworld</title>
+    <title>Rails World</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,9 +11,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="bg-white dark:bg-gray-900">
+    <main class="flex flex-col px-5 mx-auto mt-28">
+    <%= render "layouts/shared/header" %>
+    <article class="mb-40 space-y-40">
       <%= yield %>
+    </article>
+    <%= render "layouts/shared/footer" %>
     </main>
   </body>
 </html>
