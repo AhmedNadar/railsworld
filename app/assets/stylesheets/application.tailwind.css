@@ -21,8 +21,8 @@
     scroll-behavior: smooth;
     @apply relative max-w-full min-h-full text-base font-normal leading-normal text-left font-satoshi;
   }
-  .body {
-    @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-slate-900;
+  body {
+    @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-white dark:bg-slate-900;
   }
 
   h1, h2, h3, h4, h5, h6{
