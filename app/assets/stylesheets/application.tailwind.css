@@ -1,3 +1,5 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&f[]=zodiak@700,800,400,900,300,100&f[]=tanker@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +8,27 @@
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+    @apply px-4 py-2 bg-blue-200;
   }
 }
 
 */
+
+
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+    @apply relative max-w-full min-h-full text-base font-normal leading-normal text-left font-satoshi;
+  }
+  .body {
+    @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-slate-900;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    @apply font-black leading-relaxed text-gray-900 font-tanker dark:text-white ;
+  }
+}
+
+
+
