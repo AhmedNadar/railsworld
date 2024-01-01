@@ -1,88 +1,126 @@
-
-		<div class="relative" id="home">
-    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary-400 to-purple-400 dark:from-blue-700"></div>
-        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
-    </div>
-    <div class="px-6 mx-auto max-w-7xl md:px-12 xl:px-6">
+<div class="relative -mt-40 transition duration-300 ease-in-out bg-livid_brown-950 dark:bg-gray-900" id="home">
+  <img alt="Toronto" src="assets/toronto_bg_01.jpg" class="absolute inset-0 object-cover w-full h-full transition-opacity bg-center bg-no-repeat opacity-20" />
+  <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary-400 to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+    <div class="px-6 pt-40 mx-auto max-w-8xl md:px-12 xl:px-6">
     <div class="relative ml-auto pt-36">
-            <div class="mx-auto text-center lg:w-2/3">
-                <h1 class="text-5xl md:text-6xl xl:text-8xl">Shaping a world with <span class="text-primary-600">Ruby on Rails.</span></h1>
-                <p class="mt-8 text-gray-700 dark:text-gray-300"><strong>Rails World</strong> is a two-day, two track community conference featuring technical talks, demos, workshops, networking, and keynotes about the latest features and best practices in Rails development.</p>
-
-                <div class="flex flex-wrap justify-center mt-16 gap-y-4 gap-x-6">
-                    <a href="#" class="relative flex items-center justify-center w-full px-6 h-11 before:absolute before:inset-0 before:rounded-full before:bg-primary-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                      <span class="relative text-base font-semibold text-white">Get started</span>
-                    </a>
-                    <a href="#" class="relative flex items-center justify-center w-full px-6 h-11 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary-700/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
-                      <span class="relative text-base font-semibold text-primary-600 dark:text-white">Learn more</span>
-                    </a>
-                </div>
-
-                <div class="flex flex-col items-center mx-auto mt-8">
-                  <span class="text-sm font-medium text-gray-400 dark:text-gray-500">Brought to you by</span>
-                  <a class="my-2" href="https://rapidrails.cc">
-                    <%= image_tag 'RRUI_logo.png', class:"w-auto h-12 rounded-full dark:ring-gray-400 dark:ring-1", alt: 'RapidRailsUI buttons code examples', title: 'RapidRails UI Components Kit'%>
-                  </a>
-                  <span class="text-sm font-medium tracking-wide font-tanker dark:text-white">RapidRails UI</span>
-                </div>
-
-                <div class="justify-between hidden py-8 mt-16 border-gray-100 border-y dark:border-gray-800 sm:flex">
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The lowest price</h6>
-                        <p class="mt-2 text-gray-500">Some text here</p>
-                    </div>
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The fastest on the market</h6>
-                        <p class="mt-2 text-gray-500">Some text here</p>
-                    </div>
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The most loved</h6>
-                        <p class="mt-2 text-gray-500">Some text here</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-3 mt-12 sm:grid-cols-4 md:grid-cols-5">
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-shopify.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-github.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="flex p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-37signals.svg" class="w-auto m-auto h-9" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-appsignal.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="flex p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-bigbinary.svg" class="w-auto h-8 m-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-            </div>
-            <div class="grid grid-cols-3 mt-4 sm:grid-cols-4 md:grid-cols-5">
-              <div class="flex p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-gorails.svg" class="w-auto h-8 m-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-buzzsprout.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="flex p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-magmalabs.svg" class="w-auto h-8 m-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-clickfunnels.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-              <div class="p-4 transition duration-200 grayscale hover:grayscale-0">
-                <img src="https://rubyonrails.org/assets/world/images/sponsors/RW-logo-procore.svg" class="w-auto h-12 mx-auto" loading="lazy" alt="client logo" width="" height="">
-              </div>
-            </div>
+      <div class="mx-auto mb-20 text-center lg:w-2/3">
+        <h6 class="mb-8 text-xl font-bold tracking-wide text-toronto_blue-400 drop-shadow-md md:text-3xl font-zodiak">SEPTEMBER 26 - 27</h6>
+        <h1 class="text-5xl tracking-wide text-white drop-shadow-md md:text-6xl xl:text-9xl">Shaping a world with <span class="text-primary-600 drop-shadow-xl">Ruby on Rails</span></h1>
+        <p class="max-w-3xl mx-auto mt-8 mt-10 text-2xl font-medium tracking-tight text-white drop-shadow-xl"><span class="font-black tracking-tight"><a class="my-2 underline hover:no-underline text-primary-400" href="https://twitter.com/search?q=%23railsworld" target="_blank">#RailsWorld</a></span> is a two-day, two track community conference featuring technical talks, demos, workshops, networking, and keynotes about the latest features and best practices in Rails development.</p>
+        <div class="flex flex-wrap justify-center mt-16 gap-y-4 gap-x-6">
+          <a href="#" class="relative flex items-center justify-center w-full px-6 h-11 before:absolute before:inset-0 before:rounded-full before:bg-primary-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <span class="relative text-base font-semibold text-white">Get started</span>
+          </a>
         </div>
+
+        <div class="flex flex-col items-center mx-auto my-12">
+          <span class="text-sm font-medium text-gray-300">Brought to you by</span>
+          <a class="flex flex-col items-center my-2" href="https://rapidrails.cc">
+            <%= image_tag 'RRUI_logo.png', class:"h-auto w-12 rounded-full hover:scale-105 transition duration-300", alt: 'RapidRailsUI buttons code examples', title: 'RapidRails UI Components Kit'%>
+            <span class="mt-2 font-medium tracking-widest text-white font-tanker">RapidRails</span>
+            <svg width="100" height="24" class="-mt-4 text-indigo-400" viewBox="0 0 140 46" xmlns="http://www.w3.org/2000/svg">
+              <g fill="currentColor" >
+                <path d="M139.643 39.509a1.48 1.48 0 0 0-.713-.994 1.75 1.75 0 0 0-1.283-.195 6.816 6.816 0 0 1-3.03.201c-1.273-.15-2.62-.26-3.928-.385a243.51 243.51 0 0 0-6.593-.552c-2.408-.168-4.825-.285-7.233-.435-2.27-.143-4.532-.327-6.802-.427a728.654 728.654 0 0 0-14.402-.494c-4.002-.126-17.918-.268-21.929-.218-2.81 0-5.612.118-8.414.151-3.717 0-17.34.285-21.058.485-3.964.193-7.947.318-11.903.57-3.662.225-7.324.376-10.932.619a17.04 17.04 0 0 0-2.472.234c-2.151 0-4.056.184-5.97.276-1.519.076-3.076.11-4.577.318-.632 0-.916-.334-1.895-.217-.98.117-1.896.385-1.941.887-.504.1 0 .343-.568.435v.393c.394.168.513.343 0 .553v.159c.311-.117.357 0 .513.058v.327c-.367.159-.147.31-.083.452.064.142.458.368.385.594-.08.409.102.824.467 1.071v.192c.1.586.961 1.072 1.08 1.674.092.46.916.837 2.115.745 1.026-.05 1.383-.444 2.317-.569.174 0 .741-.075.915-.084 3.873-.234 7.746-.493 11.591-.837 1.136-.092 2.363-.067 3.406-.25 1.374-.243 2.811-.243 4.203-.42a68.667 68.667 0 0 1 7.91-.418c2.207 0 4.368-.217 6.556-.3 1.218-.051 2.435.05 3.662-.068.474-.081.956-.12 1.438-.117 1.309.075 12.507-.1 13.825-.092 2.554 0 5.109-.117 7.654-.142 3.022-.05 15.895-.143 18.934 0 1.035 0 2.115.175 3.086.125 2.847-.142 5.667.084 8.496.143 2.482.05 4.935.259 7.426.326 2.49.067 4.78.192 7.141.427.916.092 1.905.209 2.884.293.77.067 1.291-.176 2.024-.092 1.831.226 3.763.385 5.686.51.996.024 1.99.102 2.975.234 1.428.273 2.875.458 4.33.553l.916.301c.784.354 1.68.44 2.527.243.48-.288.704-.824.559-1.33v-.152c.091-.125.174-.259.082-.401.238-.084.257-.184.193-.31.228-.477.65-.929.402-1.456-.1-.21-.357-.519.385-.661v-.394c-.357-.041-.394-.159-.467-.267.037-.436.092-.854.11-1.272zm-67.277 1.054z" class="swoosh"></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <div class="justify-between hidden py-6 mt-16 border-gray-100 border-y dark:border-gray-800 sm:flex">
+
+            <div class="text-center">
+              <div class="flex items-center justify-center">
+                <%= image_tag "map-pin.svg", class:"inline-flex h-6 h-6 mr-2 text-red-200", role:"presentation", alt: "RailsWorld conference tracks", title: "RailsWorld conference tracks" %>
+                <h6 class="inline-block text-2xl font-medium text-white">TRACKS</h6>
+              </div>
+              <p class="mt-2 text-gray-300">Some text here Some text here</p>
+            </div>
+
+            <div class="text-center">
+              <div class="flex items-center justify-center">
+                <%= image_tag "icons/map-pin.svg", class:"inline-flex h-6 h-6 mr-2 text-white", role:"presentation", alt: "RailsWord in Toronto Canada", title: "RailsWord in Toronto Canada" %>
+                <h6 class="inline-block text-2xl font-medium text-white">TORONTO</h6>
+              </div>
+              <p class="mt-2 text-gray-300">Get arround and explore the city</p>
+            </div>
+
+            <div class="text-center">
+              <div class="flex items-center justify-center">
+                <%= image_tag "icons/chat-bubble-left-right.svg", class:"inline-flex h-6 h-6 mr-2 text-red-200", role:"presentation", alt: "RailsWorld basecampfire", title: "RailsWorld basecampfire" %>
+                <h6 class="inline-block text-2xl font-medium text-white">CONNECT</h6>
+              </div>
+              <p class="mt-2 text-gray-300">Gather around our Basecamp campfire</p>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="mx-auto mt-12 text-center lg:max-w-6xl">
+        <div class="grid grid-cols-2 mt-12 sm:grid-cols-4 md:grid-cols-5">
+          <div class="flex p-4">
+            <a href="https://basecamp.com/?ref=rapidrails.cc" aria-label="Basecamp" class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-basecamp.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Basecamp">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://hey.com/?ref=rapidrails.cc" aria-label="Hey"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-hey.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Hey">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://shopify.com/?ref=rapidrails.cc" aria-label="Shopify"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-github.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="client logo">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://dribbble.com/?ref=rapidrails.cc" aria-label="dribbble"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org//assets/images/logo-dribbble.svg" alt="dribbble" class="w-auto h-20 mx-auto" loading="lazy">
+            </a>
+          </div>
+          <div class="flex p-4">
+          <a href="https://airbnb.com/?ref=rapidrails.cc" aria-label="Airbnb"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+            <img src="https://rubyonrails.org/assets/images/logo-airbnb.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Airbnb">
+            </a>
+          </div>
+
+          <div class="flex p-4">
+            <a href="https://soundcloud.com/?ref=rapidrails.cc" aria-label="Soundcloud" class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-soundcloud.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Soundcloud">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://cookpad.com/?ref=rapidrails.cc" aria-label="Cookpad" class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-cookpad.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Cookpad">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://Heroku.com/?ref=rapidrails.cc" aria-label="Heroku"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-heroku.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Heroku">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://twitch.tv/?ref=rapidrails.cc" aria-label="twitch"  class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-twitch.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="twitch">
+            </a>
+          </div>
+          <div class="flex p-4">
+            <a href="https://coinbase.com/?ref=rapidrails.cc" aria-label="Coinbase"class="transition duration-300 border border-gray-400 rounded-lg cursor-pointer bg-livid_brown-300/50 hover:bg-primary-300 hover:scale-105">
+              <img src="https://rubyonrails.org/assets/images/logo-coinbase.svg" class="w-auto h-20 mx-auto" loading="lazy" alt="Coinbase">
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
 </div>
 </div>
 		<div id="features">
   <div class="px-6 mx-auto max-w-7xl md:px-12 xl:px-6">
     <div class="md:w-2/3 lg:w-1/2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary-600">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-toronto_blue-600">
         <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd"></path>
       </svg>
 
@@ -97,14 +135,14 @@
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512" height="512" alt="burger illustration">
 
           <div class="space-y-2">
-            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary-600">
+            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-toronto_blue-600">
               First feature
             </h5>
             <p class="text-gray-600 dark:text-gray-300">
               Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
             </p>
           </div>
-          <a href="#" class="flex items-center justify-between group-hover:text-secondary-600">
+          <a href="#" class="flex items-center justify-between group-hover:text-toronto_blue-600">
             <span class="text-sm">Read more</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
               <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
@@ -117,14 +155,14 @@
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512" height="512" alt="burger illustration">
 
           <div class="space-y-2">
-            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary-600">
+            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-toronto_blue-600">
               Second feature
             </h5>
             <p class="text-gray-600 dark:text-gray-300">
               Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
             </p>
           </div>
-          <a href="#" class="flex items-center justify-between group-hover:text-secondary-600">
+          <a href="#" class="flex items-center justify-between group-hover:text-toronto_blue-600">
             <span class="text-sm">Read more</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
               <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
@@ -137,14 +175,14 @@
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512" height="512" alt="burger illustration">
 
           <div class="space-y-2">
-            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary-600">
+            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-toronto_blue-600">
               Third feature
             </h5>
             <p class="text-gray-600 dark:text-gray-300">
               Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
             </p>
           </div>
-          <a href="#" class="flex items-center justify-between group-hover:text-secondary-600">
+          <a href="#" class="flex items-center justify-between group-hover:text-toronto_blue-600">
             <span class="text-sm">Read more</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
               <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
@@ -157,14 +195,14 @@
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512" height="512" alt="burger illustration">
 
           <div class="space-y-2">
-            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-secondary-600">
+            <h5 class="text-xl font-semibold text-gray-700 transition dark:text-white group-hover:text-toronto_blue-600">
               More features
             </h5>
             <p class="text-gray-600 dark:text-gray-300">
               Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
             </p>
           </div>
-          <a href="#" class="flex items-center justify-between group-hover:text-secondary-600">
+          <a href="#" class="flex items-center justify-between group-hover:text-toronto_blue-600">
             <span class="text-sm">Read more</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
               <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
@@ -182,7 +220,7 @@
         <path fill-rule="evenodd" d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z" clip-rule="evenodd"></path>
       </svg><div class="flex-row-reverse justify-between space-y-6 text-gray-600 md:flex md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
         <div class="md:5/12 lg:w-1/2">
-          <img src="assets/railsworld_info_toronto.jpeg" alt="image" loading="lazy" width="" height="" class="w-full">
+          <img src="assets/railsworld_info_toronto.jpeg" alt="image" loading="lazy" class="w-full">
         </div>
         <div class="md:7/12 lg:w-1/2">
           <h2 class="text-3xl md:text-6xl">
