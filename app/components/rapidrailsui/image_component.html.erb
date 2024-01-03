@@ -1,0 +1,26 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/image_component.html.erb -->
+<%
+=end%>
+<figure class="flex flex-col">
+  <%#= render RapidRailsUI::BaseComponent.new(tag: "img", **@options) do %>
+  <% if url.present? %>
+    <%= link_to url, target: "_blank", rel: "noopener noreferrer", title: @alt, class: "#{"group block overflow-hidden"if @group}"  do %>
+      <%= image_tag @source, class: "#{image_classes} #{group_it if @group}", alt: @alt, role:"presentation" %>
+      <% if caption.present? %>
+        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400 <%= "group-hover:underline group-hover:underline-offset-4" if @group %>">
+          <%= caption %>
+        </figcaption>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= image_tag @source, class: "#{image_classes} #{group_it if @group}", alt: @alt, role:"presentation" %>
+    <% if caption.present? %>
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400 <%= "group-hover:underline group-hover:underline-offset-4" if @group %>">
+        <%= caption %>
+      </figcaption>
+    <% end %>
+  <% end %>
+  <%# end %>
+</figure>

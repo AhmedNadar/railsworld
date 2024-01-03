@@ -1,0 +1,19 @@
+<%
+=begin%>
+<!-- app/components/rapidrailsui/card_component.html.erb -->
+<%
+=end%>
+<%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+  <% if title.present? %>
+    <%= title %>
+  <% else %>
+    <%= content %>
+  <% end %>
+    <%#= text if text? %>
+  <%#= title if title? %>
+
+  <% badges.each do |badge| %>
+    <%= badge %>
+  <% end %>
+<% end %>
+

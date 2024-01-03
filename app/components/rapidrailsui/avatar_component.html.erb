@@ -1,0 +1,28 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/avatar_component.html.erb -->
+<%
+=end%>
+<%= render RapidRailsUI::BaseComponent.new(tag: "span", **@options) do %>
+  <% if @source.present? %>
+    <%= image_tag @source, class: "#{avatar_classes} align-middle", alt: @alt, role:"presentation" %>
+    <% if @indicator.present? %>
+      <span class="absolute bottom-0 right-0 flex w-3 h-3 mr-1">
+        <span class="<%="animate-ping" if @indicator === :online %> absolute inline-flex h-full w-full rounded-full <%=INDICATOR_CLASSES[@indicator]%> opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 border border-white <%=INDICATOR_CLASSES[@indicator] %>"></span>
+      </span>
+    <% end %>
+  <% else %>
+    <span class="avatar_initials block <%= avatar_classes%>">
+      <% if @initials %>
+        <svg class="w-full h-full bg-indigo-900 <%= SHAPE_MAPPINGS[@shape] %>" viewBox="0 0 40 40">
+          <text x="50%" y="50%" dy="0.35em" fill="white" font-size="20" text-anchor="middle">
+            <%= @initials %>
+          </text>
+        </svg>
+      <% else %>
+        <%= image_tag "avatar.svg", class:"overflow-hidden inline-block", role:"presentation", alt: "RapidRailsUI avatar examples", title: "RapidRailsUI avatar examples" %>
+      <% end %>
+    </span>
+  <% end %>
+<% end %>

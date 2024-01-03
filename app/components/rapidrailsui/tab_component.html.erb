@@ -1,0 +1,18 @@
+<!-- app/components/rapidrailsui/tab_component/tab_component.html.erb -->
+<%= content_tag 'button', id: panel_id, class: "inline-block h-11 px-4 py-2 border-b-2 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300", role: "tab", data: { action: "click->tabs#select", tabs_target: "btn" } do %>
+<span class="flex items-center">
+  <%= title %>
+  <% if badge.present? %>
+    <%= badge %>
+  <% end %>
+  <% if icon.present? %>
+    <%= icon %>
+  <% end %>
+  <% if avatar.present? %>
+    <%= avatar %>
+  <% end %>
+  <% if button.present? %>
+    <%= button %>
+  <% end %>
+</span>
+<% end %>

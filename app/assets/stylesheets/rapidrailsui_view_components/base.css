@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+  @apply relative max-w-full min-h-full text-base font-normal leading-normal text-left font-poppins;
+}
+.body {
+  @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-slate-900;
+}
+
+h1, h2, h3, h4, h5, h6{
+  @apply font-bold font-merriweather;
+}
+
+.rui_main {
+  @apply w-full max-w-full mx-auto;
+}
+
+.highlight_text {
+  @apply text-blue-600 dark:text-blue-500
+}
+.mark_text {
+  @apply px-2 text-white rounded bg-rose-600 dark:bg-rose-500;
+}
+.underline_text {
+  @apply underline decoration-8 decoration-rose-400 dark:decoration-rose-600;
+}
+
+.gradient_text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-indigo-300;
+}
+
+
+blockquote {
+  position: relative;
+}
+blockquote:before {
+  position: absolute;
+  color: #b5b5b5;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  color: #b5b5b5;
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+blockquote p {
+  display: inline;
+}

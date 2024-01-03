@@ -1,0 +1,18 @@
+<%
+=begin%>
+<!-- app/components/rapidrailsui/headless_button.html.erb -->
+<%
+=end%>
+<%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+  <span class="rui-button__content">
+      <% if icon.present? || @icon_name.present? %>
+          <%= icon || rui_icon(name: @icon_name) %>
+      <% end %>
+
+    <% if content.present? %>
+      <div class="<%= @text_classes %>">
+        <%= content %>
+      </div>
+    <% end %>
+  </span>
+<% end %>

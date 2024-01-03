@@ -1,0 +1,27 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/badge_component.html.erb -->
+<%
+=end%>
+<%= render RapidRailsUI::BaseComponent.new(tag: "span", **@options) do %>
+    <% if icon.present? || @icon_name.present? %>
+      <%= icon || rui_icon(name: @icon_name, classes:"h-3 w-3") %>
+    <% end %>
+
+    <small class="<%= text_classes %> leading-4 badge badge-<%= @status %>">
+      <%= @text %>
+    </small>
+
+    <%= content %>
+
+    <% if @close_button.present? %>
+      <button type="button" class="inline-block">
+        <%= rui_icon(
+          name: "x_circle",
+          classes:"h-3.5 w-3.5 hover:scale-125 hover:drop-shadow-md transition duration-200 ease-in-out"
+        ) %>
+         <span class="sr-only">Remove badge</span>
+      </button>
+    <%end%>
+<% end %>
+

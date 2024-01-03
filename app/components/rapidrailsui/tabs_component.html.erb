@@ -1,0 +1,21 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/tabs_component.html.erb -->
+<%
+=end%>
+<div class="mb-4 border-b border-gray-200 dark:border-gray-700" data-controller="tabs" data-tabs-active-class="active_tab" data-tabs-default-tab-value="<%= @active_tab %>">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center tab-buttons">
+      <% tabs.each do |tab| %>
+        <li class="rounded-t-lg bg-gray-50 me-2" role="presentation">
+          <%= tab %>
+        </li>
+      <% end %>
+    </ul>
+  <div id="default-tab-content border rounded-lg tab-content">
+    <% tabs.each do |tab| %>
+      <div class="p-4 rounded-b-lg bg-gray-50 dark:bg-white" id="<%= tab.panel_id %>" data-tabs-target="tab" role="tabpanel">
+        <%= tab.panel %>
+      </div>
+    <% end %>
+  </div>
+</div>

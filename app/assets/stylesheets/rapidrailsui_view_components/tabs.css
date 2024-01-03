@@ -1,0 +1,9 @@
+
+@layer components {
+.tab{
+  @apply bg-slate-50;
+}
+  .active_tab {
+    @apply text-indigo-600 border-indigo-600 dark:text-indigo-400 dark:border-indigo-400 bg-indigo-50 dark:bg-indigo-900;
+  }
+}

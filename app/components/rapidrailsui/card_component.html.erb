@@ -1,0 +1,62 @@
+<%
+=begin%>
+<!-- app/components/rapidrailsui/card_component.html.erb -->
+<%
+=end%>
+
+
+<% if images.present? %>
+  <%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+    <% images.each do |image| %>
+      <%= image %>
+    <% end %>
+    <div class="p-6" aria-label="Image card Content" role="region">
+      <% if header.present? %>
+        <%= header %>
+      <% end %>
+
+      <% if regions.present? %>
+        <% regions.each do |region| %>
+          <%= region %>
+        <% end %>
+      <% end %>
+
+      <% if content.present? %>
+        <%= content %>
+      <% end %>
+
+      <% if footer.present? %>
+        <%= footer %>
+      <% end %>
+    </div>
+  <% end %>
+<% else %>
+  <%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+    <% if header.present? %>
+      <%= header %>
+    <% end %>
+
+    <% if @title.present? && !header.present? %>
+      <%= render RapidRailsUI::Card::HeaderComponent.new(title: @title) %>
+    <% end %>
+
+    <% if regions.present? %>
+      <% regions.each do |region| %>
+        <%= region %>
+      <% end %>
+    <% end %>
+
+    <% if content.present? %>
+      <%= content %>
+    <% end %>
+
+    <% if footer.present? %>
+      <%= footer %>
+    <% end %>
+
+    <% if @credits.present? && !footer.present? %>
+      <%= render RapidRailsUI::Card::FooterComponent.new(credits: @credits, credits_action_alignment: @credits_action_alignment) %>
+    <% end %>
+
+  <% end %>
+<% end %>

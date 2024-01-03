@@ -16,6 +16,16 @@ module.exports = {
         satoshi: ['Satoshi', "sans-serif"],
         zodiak: ['Zodiak', "serif"],
         tanker: ['Tanker', "serif-serif"],
+        poppins: ['"Poppins"', "sans-serif"],
+				merriweather: ['"Merriweather Sans"', "sans-serif"],
+        opensans: ['"Open Sans"', "sans-serif"],
+        roboto: ['"Roboto"', "sans-serif"],
+        lato: ['"Lato"', "sans-serif"],
+        raleway: ['"Raleway"', "sans-serif"],
+        montserrat: ['"Montserrat"', "sans-serif"],
+        noto: ['"Noto Sans"', "sans-serif"],
+        quicksand: ['"Quicksand"', "sans-serif"],
+        mono: ['"Roboto Mono"', "monospace"],
       },
       colors: {
         primary: {

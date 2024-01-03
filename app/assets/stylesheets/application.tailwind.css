@@ -1,4 +1,4 @@
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&f[]=zodiak@700,800,400,900,300,100&f[]=tanker@400&display=swap");
+@import "./rapidrailsui_view_components/index.css";
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,8 @@
     @apply relative max-w-full min-h-full text-base font-normal leading-normal text-left font-satoshi;
   }
   body {
-    @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-white dark:bg-slate-900;
+    /* @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-white dark:bg-primary-900; */
+    @apply flex flex-col max-w-full min-h-screen text-base antialiased bg-[#f8fafb];
   }
 
   h1, h2, h3, h4, h5, h6{

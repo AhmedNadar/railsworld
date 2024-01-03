@@ -1,0 +1,20 @@
+<%
+=begin%>
+<!-- app/components/rapidrailsui/social_button_component.html.erb -->
+<%
+=end%>
+<%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+  <span class="rui-button__content">
+    <%# button_classes %>
+    <% if @platform.present? %>
+      <div class="rui-button__icon <%= "mr-2" if @text %>">
+        <%= rui_icon(name: @platform, size: @icon_size) %>
+      </div>
+    <% end %>
+    <% if @text %>
+      <div class="rui-button__text">
+        <%= @text %>
+      </div>
+    <% end %>
+  </span>
+<% end %>

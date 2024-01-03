@@ -1,0 +1,20 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/profile_component.html.erb -->
+<%
+=end%>
+
+  <%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+    <%= avatar %>
+    <div class="flex flex-col gap-2 <%= "items-center" if @layout == :vertical %>">
+      <%= name if name? %>
+      <%= description if description? %>
+      <%= extra_info if extra_info? %>
+    </div>
+
+    <div class="flex items-center <%= "flex-col gap-2" if @layout == :vertical %>">
+      <%= action_button if action_button? %>
+      <%= icon if icon? %>
+    </div>
+  <% end %>
+

@@ -1,0 +1,23 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/text_component.html.erb -->
+<%
+=end%>
+
+<% if tag == :blockquote %>
+  <blockquote class="<%= @options[:classes] %>">
+    <p><%= content %></p>
+  </blockquote>
+<% else %>
+  <%= render RapidRailsUI::BaseComponent.new(tag: @tag, **@options) do %>
+    <% if icon.present? || @icon_name.present? %>
+      <%= icon %>
+    <% end %>
+    <%#= processed_content.html_safe %>
+    <%= @truncate ? ActionController::Base.helpers.truncate(processed_content, length: @length).html_safe : processed_content.html_safe %>
+    <%#= @truncate ? ActionController::Base.helpers.truncate(content, length: @length) : content %>
+    <% if badge.present? %>
+      <%= badge || rui_badge(badge) %>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,0 +1,15 @@
+<%
+=begin%>
+ <!-- app/components/rapidrailsui/alert_component.html.erb -->
+<%
+=end%>
+
+<div class="<%= alert_base_classes %> <%= alert_border_classes(type) if type %>">
+  <div class="<%= alert_type_classes(type) %>">
+    <%= rui_icon(name: type, classes: 'w-8 h-8 rr_icon') %>
+  </div>
+  <div class="w-full p-2">
+    <span class="<%= alert_text_classes(type) %>"><%= title %></span>
+    <p class="<%= alert_message_classes %>"><%= message %></p>
+  </div>
+</div>

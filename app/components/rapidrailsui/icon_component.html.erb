@@ -1,0 +1,14 @@
+<%
+=begin%>
+<!-- app/components/rapidrailsui/icon_component.html.erb -->
+<%
+=end%>
+
+<%= render(RapidRailsUI::BaseComponent.new(tag: 'span', **@options)) do %>
+  <% if @source %>
+    <%= @source %>
+  <% else %>
+    <%= content %>
+  <% end %>
+<% end %>
+

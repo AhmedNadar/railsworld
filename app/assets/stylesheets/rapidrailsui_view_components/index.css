@@ -1,0 +1,7 @@
+@import url('https://api.fontshare.com/v2/css?f[]=merriweather-sans@700,600,800,500&f[]=poppins@900,500,400,100,300,800,700,200,600&display=swap');
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&f[]=zodiak@700,800,400,900,300,100&f[]=tanker@400&display=swap");
+
+@import "base.css";
+@import "buttons.css";
+@import "tabs.css";
+
